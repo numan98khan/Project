@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Stock"
+            android:title="Stock"
+            android:icon="@drawable/ic_local_grocery">
+        </item>
+        <item
+            android:id="@+id/History"
+            android:title="History"
+            android:icon="@drawable/ic_history_black">
+        </item>
+        <item
+            android:id="@+id/Trash"
+            android:title="Trash"
+            android:icon="@drawable/ic_delete_black">
+        </item>
+    </group>
+
+</menu>
