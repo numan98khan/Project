@@ -21,6 +21,19 @@
             app:title="Google Map"
             app:titleTextColor="#000000"
             />
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchview"
+            app:searchBackground="@color/blue"
+            app:searchSuggestionBackground="@color/blue"
+            app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+            app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+            app:searchSuggestionIcon="@drawable/ic_suggestion"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
+        </com.miguelcatalan.materialsearchview.MaterialSearchView>
         <FrameLayout
             android:id="@+id/fragment"
             android:layout_width="match_parent"
