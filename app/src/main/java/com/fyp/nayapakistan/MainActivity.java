@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_black);
          materialSearchView = findViewById(R.id.searchview);
-         materialSearchView.setVisibility(View.INVISIBLE);
+         materialSearchView.setVisibility(View.GONE);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new MapFragment())
                 .commit();
