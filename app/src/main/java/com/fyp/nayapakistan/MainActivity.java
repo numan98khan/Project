@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_black);
          materialSearchView = findViewById(R.id.searchview);
+         materialSearchView.setVisibility(View.INVISIBLE);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new MapFragment())
                 .commit();
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                         myToolbar.setBackgroundColor(getResources().getColor(R.color.blue));
                         myToolbar.setTitleTextColor(getResources().getColor(R.color.white));
                         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_white);
+                        materialSearchView.setVisibility(View.VISIBLE);
 
                         break;
                 }
