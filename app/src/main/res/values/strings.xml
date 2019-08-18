@@ -12,4 +12,5 @@
     <string name="device_not_supported">This device is not supported</string>
     <string name="cannot_get_location">Cannot get your location</string>
     <string name="sent_failed">Sent failed</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

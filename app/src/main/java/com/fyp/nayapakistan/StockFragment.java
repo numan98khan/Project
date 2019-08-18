@@ -1,11 +1,9 @@
 package com.fyp.nayapakistan;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +29,7 @@ public class StockFragment extends Fragment {
         tabLayout = view.findViewById(R.id.tablayout);
         viewPager = view.findViewById(R.id.viewpager);
         viewpageradapter = new Viewpageradapter(getFragmentManager());
-        viewpageradapter.AddFragment(new stockmanger() , "All");
+        viewpageradapter.AddFragment(new StockManager() , "All");
         viewpageradapter.AddFragment(new supplier() , "Supplier");
         viewpageradapter.AddFragment(new Food() , "Food");
         viewPager.setAdapter(viewpageradapter);

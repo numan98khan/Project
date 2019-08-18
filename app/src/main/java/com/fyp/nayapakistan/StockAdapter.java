@@ -9,19 +9,17 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.fyp.nayapakistan.Model.Product;
-import com.fyp.nayapakistan.R;
 import com.fyp.nayapakistan.Util.StoreFilter;
-import java.util.ArrayList;
 
 //This is the class used for recyclerView for grid view products
 //1. Product.java
@@ -61,7 +59,7 @@ public class StockAdapter extends RecyclerView.Adapter<StockAdapter.ViewHolder> 
         public void setData(Product item) {
             this.item = item;
             textView.setText(item.getProductId());
-            imageView.setImageResource(R.drawable.cargo);
+            imageView.setImageResource(R.drawable.ic_local_grocery);
             linearLayout.setBackgroundColor(Color.parseColor("#FFFF0000"));
         }
 
